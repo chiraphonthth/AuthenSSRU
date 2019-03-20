@@ -97,7 +97,11 @@
                                 <color key="tintColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="Register" id="M6F-Ie-Wbi">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" image="ArrowBack" id="24n-Q8-BTf"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" image="ArrowBack" id="24n-Q8-BTf">
+                                            <connections>
+                                                <action selector="backButton:" destination="vVT-3R-JCS" id="Acj-CD-R0D"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -107,6 +111,9 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="BackMain" id="Vbc-Pv-4i3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RPX-7r-s9y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

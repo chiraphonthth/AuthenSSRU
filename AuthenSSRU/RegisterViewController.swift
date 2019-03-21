@@ -21,13 +21,14 @@ class RegisterViewController: UIViewController {
     @IBAction func uploadButton(_ sender: UIBarButtonItem){
         print("You Click upload")
         
+        
+        
     }
     
     
     
     
     @IBAction func backButton(_ sender: UIBarButtonItem) {
-        
         print("You Click Back")
         performSegue(withIdentifier: "BackMain", sender: self)
         
